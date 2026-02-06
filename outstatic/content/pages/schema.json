@@ -1,6 +1,12 @@
 {
-  "title": "Pages",
-  "slug": "pages",
+  "title": "pages",
   "type": "object",
-  "properties": {}
+  "properties": {
+    "welcomeMessage": {
+      "description": "Welcome Message",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "welcomeMessage"
+    }
+  }
 }
