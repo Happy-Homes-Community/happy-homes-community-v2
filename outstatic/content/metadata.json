@@ -1,0 +1,23 @@
+{
+  "commit": "",
+  "generated": "2026-02-06T18:13:32.621Z",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "",
+        "hash": "896380669",
+        "path": "outstatic/content/pages/landing.mdx"
+      },
+      "author": {
+        "name": "Adnan Gondal",
+        "picture": "https://avatars.githubusercontent.com/u/43793942?v=4"
+      },
+      "collection": "pages",
+      "publishedAt": "2026-02-06T18:12:17.877Z",
+      "slug": "landing",
+      "status": "draft",
+      "title": "Landing",
+      "welcomeMessage": "Welcome to Happy Homes Community"
+    }
+  ]
+}
