@@ -1,11 +1,11 @@
 {
-  "commit": "39414076bb18277ba034df52d82460b5ed0a5a62",
-  "generated": "2026-02-06T18:13:36.714Z",
+  "commit": "cb6b68cf8d952b436261a3bd660527f01cabcead",
+  "generated": "2026-02-14T09:49:48.975Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "39414076bb18277ba034df52d82460b5ed0a5a62",
-        "hash": "876808500",
+        "commit": "cb6b68cf8d952b436261a3bd660527f01cabcead",
+        "hash": "2792375227",
         "path": "outstatic/content/pages/landing.mdx"
       },
       "author": {
@@ -17,7 +17,7 @@
       "slug": "landing",
       "status": "published",
       "title": "Landing",
-      "welcomeMessage": "Welcome to Happy Homes Community"
+      "welcomeMessage": "Welcome to Happy Homes Community, test change"
     }
   ]
 }
