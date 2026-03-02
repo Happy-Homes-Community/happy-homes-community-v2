@@ -1,6 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import { getPageData } from "@/app/lib/contentParser";
 import { LandingPageData } from "@/app/types/content";
+import Navbar from "./components/Navbar";
 
 export default async function Home() {
   const page = await getPageData<LandingPageData>("pages", "landing", [
@@ -11,30 +12,8 @@ export default async function Home() {
 
   return (
     <div>
+       <Navbar />
       <main>
-        <div className="navbar bg-base-100 shadow-sm">
-          <div className="flex-1">
-            <a className="btn btn-ghost text-xl">
-              <img src="/logo-full.png" alt="Logo" className="h-17 w-auto" />
-            </a>
-          </div>
-          <div className="flex-none">
-            <ul className="menu menu-horizontal px-1">
-              <li>
-                <a>Home</a>
-              </li>
-              <li>
-                <a>About</a>
-              </li>
-              <li>
-                <a>Blog</a>
-              </li>
-              <li>
-                <a>Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
         <h1 className="text-4xl font-bold mb-8">{page.welcomeMessage}</h1>
 
         {page.heroImage && (
