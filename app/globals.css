@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-    themes: light;
     root: ":root";
     logs: true;
+}
+@plugin "daisyui/theme" {
+    name: "happyHomes";
+    default: true; /* This forces your app to use this theme by default */
+
+    --color-primary: #fd642a;     /* Orange */
+    --color-secondary: #a6da3f;   /* Green */
+    --color-base-100: #fcf3e7;    /* Background */
+    --color-base-content: #fd642a;/* Text */
 }
