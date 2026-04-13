@@ -2,10 +2,13 @@
 @plugin "daisyui" {
     root: ":root";
     logs: true;
+    themes: happyHomes --default;
 }
 @plugin "daisyui/theme" {
     name: "happyHomes";
-    default: true; /* This forces your app to use this theme by default */
+    default: true;
+    prefersdark: false;  /* Prevents system dark mode from overriding */
+    color-scheme: light;
 
     --color-primary: #fd642a;     /* Orange */
     --color-secondary: #a6da3f;   /* Green */
