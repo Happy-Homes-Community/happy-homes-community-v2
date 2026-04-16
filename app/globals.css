@@ -1,6 +1,17 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-    themes: light;
     root: ":root";
     logs: true;
+    themes: happyHomes --default;
+}
+@plugin "daisyui/theme" {
+    name: "happyHomes";
+    default: true;
+    prefersdark: false;  /* Prevents system dark mode from overriding */
+    color-scheme: light;
+
+    --color-primary: #fd642a;     /* Orange */
+    --color-secondary: #a6da3f;   /* Green */
+    --color-base-100: #fcf3e7;    /* Background */
+    --color-base-content: #fd642a;/* Text */
 }
