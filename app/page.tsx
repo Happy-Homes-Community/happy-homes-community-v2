@@ -2,9 +2,10 @@ import ReactMarkdown from 'react-markdown';
 import {getPageData} from "@/app/lib/contentParser";
 import {LandingPageData} from "@/app/types/content";
 import HeroCarousel from "@/app/components/HeroCarousel";
-import {eventsData, missionData, offersData} from "@/app/data";
+import {eventsData, missionData, offersData, partnersData} from "@/app/data";
 import OfferCard from "@/app/components/OfferCard";
 import UpcomingEventCard from "@/app/components/UpcomingEventCard";
+import PartnerLogos from "@/app/components/PartnerLogos";
 
 function EventCard(props: {
     id: string,
@@ -34,20 +35,25 @@ export default async function Home() {
                 <HeroCarousel />
             </section>
 
-            {/* Mission Section (Now driven completely by data.ts) */}
+            {/* Mission Section */}
             <section className="max-w-4xl mx-auto px-4 py-20">
                 <div className="bg-white bg-opacity-50 rounded-3xl p-8 md:p-12 shadow-sm text-center">
                     <h2 className="text-3xl font-bold mb-6 text-primary">{missionData.title}</h2>
                     <p className="mb-6 font-medium text-gray-800">
                         {missionData.description}
                     </p>
+
+                    {/* Updated Clean Bullet Points */}
                     <ul className="text-left space-y-4 max-w-2xl mx-auto font-medium text-gray-800">
                         {missionData.points.map((point, index) => (
-                            <li key={index} className="flex gap-3">
-                                <span>✅</span> {point}
+                            <li key={index} className="flex items-start gap-3">
+                                {/* Sleek custom bullet using your secondary green brand color */}
+                                <span className="w-2 h-2 mt-2 rounded-full bg-secondary flex-shrink-0"></span>
+                                <span className="leading-relaxed">{point}</span>
                             </li>
                         ))}
                     </ul>
+
                 </div>
             </section>
 
@@ -70,6 +76,9 @@ export default async function Home() {
                     ))}
                 </div>
             </section>
+
+            {/* Who we work with Section */}
+            <PartnerLogos partners={partnersData} />
 
         </main>
     );

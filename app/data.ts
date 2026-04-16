@@ -1,5 +1,6 @@
 import {Offer} from "@/app/components/OfferCard";
 import {EventItem} from "@/app/components/UpcomingEventCard";
+import {Partner} from "@/app/components/PartnerLogos";
 
 export const missionData = {
     title: "Our Mission",
@@ -17,13 +18,13 @@ export const offersData: Offer[] = [
         id: 'offer-1',
         title: 'Educational Workshops',
         description: 'Empowering parents and children through practical skill-building and emotional support sessions.',
-        imageUrl: '',
+        imageUrl: '/images/meeting.jpg',
     },
     {
         id: 'offer-2',
         title: 'Support Groups',
         description: 'Safe, welcoming spaces for families to connect, share, and grow together.',
-        imageUrl: '',
+        imageUrl: '/images/community.jpg',
     },
     {
         id: 'offer-3',
@@ -36,29 +37,50 @@ export const offersData: Offer[] = [
 export const eventsData: EventItem[] = [
     {
         id: 'event-1',
-        month: 'Oct',
-        day: '12',
-        title: 'Womens Self-Care Workshop',
-        description: 'Empowering well-being and confidence.',
-        imageUrl: '',
+        month: 'May',
+        day: '11',
+        title: "Women's Badminton",
+        description: 'Empowering well-being and confidence through sport',
+        imageUrl: '/posters/badminton-poster.jpg',
         link: '#'
     },
     {
         id: 'event-2',
-        month: 'Oct',
-        day: '12',
-        title: "Women's Kit Workshop",
-        description: 'Empowering well-being and confidence.',
-        imageUrl: '',
+        month: 'May',
+        day: '13',
+        title: "Tea with Sisters",
+        description: 'Tea, snacks and conversations',
+        imageUrl: '/posters/tea-with-sisters-poster.jpg',
         link: '#'
     },
     {
         id: 'event-3',
-        month: 'Oct',
-        day: '12',
-        title: 'Womens Self-Care Workshop',
-        description: 'Empowering well-being and confidence.',
-        imageUrl: '',
+        month: 'May',
+        day: '16',
+        title: 'Picnic in the park',
+        description: 'Brunch, walk in the park and sight seeing together',
+        imageUrl: '/posters/picnic-poster.jpg',
         link: '#'
     }
+];
+
+export const partnersData: Partner[] = [
+    {
+        id: 'partner-1',
+        name: "Wandsworth Council",
+        logoUrl: "/logos/Wandsworth_Council_logo.png",
+        websiteUrl: "https://www.wandsworth.gov.uk/",
+    },
+    {
+        id: 'partner-2',
+        name: "NHS",
+        logoUrl: "/logos/National_Health_Service_logo.png",
+        websiteUrl: "https://www.england.nhs.uk/",
+    },
+    {
+        id: 'partner-3',
+        name: "WCA",
+        logoUrl: "/logos/WCA_logo.png",
+        websiteUrl: "https://www.wandsworthcarealliance.org.uk/",
+    },
 ];

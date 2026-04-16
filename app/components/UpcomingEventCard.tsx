@@ -11,27 +11,46 @@ export interface EventItem {
     link: string;
 }
 
-export default function UpcomingEventCard({ month, day, title, description, imageUrl, link }: EventItem) {
+export default function EventCard({ month, day, title, description, imageUrl, link }: EventItem) {
     return (
-        <div className="card bg-white shadow-sm border border-primary/20">
-            <div className="card-body text-left">
-                <div className="flex items-center gap-4 mb-4">
-                    <div className="bg-primary text-white p-3 rounded-lg text-center leading-none">
-                        <span className="block text-sm font-bold uppercase">{month}</span>
-                        <span className="block text-2xl font-bold">{day}</span>
+        <div className="card card-side bg-white shadow-sm border border-primary/20 overflow-hidden h-full">
+
+            {/* Content Section */}
+            <div className="card-body p-5 flex flex-col justify-between text-left w-3/5">
+                <div>
+                    {/* Date Badge */}
+                    <div className="bg-primary text-white p-2 rounded-lg text-center leading-none shadow-sm inline-block mb-3">
+                        <span className="block text-[10px] font-bold uppercase tracking-wider">{month}</span>
+                        <span className="block text-lg font-bold">{day}</span>
                     </div>
-                    <div className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center text-xs text-gray-600 overflow-hidden">
-                        {imageUrl ? <img src={imageUrl} alt={title} className="w-full h-full object-cover" /> : 'Image'}
-                    </div>
+
+                    {/* Text Content */}
+                    <h3 className="card-title text-base font-bold text-primary mb-2 leading-tight">{title}</h3>
+                    {/* line-clamp-3 ensures the description doesn't push the card too tall if it's really long */}
+                    <p className="text-sm text-gray-700 line-clamp-3">{description}</p>
                 </div>
-                <h3 className="card-title text-lg text-primary">{title}</h3>
-                <p className="text-sm mt-2 text-gray-700">{description}</p>
+
+                {/* Action Button */}
                 <div className="card-actions justify-start mt-4">
-                    <Link href={link} className="text-primary font-bold hover:underline">
+                    <Link href={link} className="text-primary text-sm font-bold hover:underline">
                         Read More
                     </Link>
                 </div>
             </div>
+
+
+            {/* Image Section - Designed to hold A4-style poster */}
+            <figure className="w-2/5 bg-gray-100 flex-shrink-0 relative">
+                {imageUrl ? (
+                    <img src={imageUrl} alt={title} className="absolute inset-0 w-full h-full object-cover object-top" />
+                ) : (
+                    <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-medium text-sm text-center p-2 bg-gray-200">
+                        A4 Poster
+                    </div>
+                )}
+            </figure>
+
         </div>
     );
 }
+
