@@ -1,6 +1,6 @@
 {
-  "commit": "b6687844166415ddccfbc399bbfc10b26d2e798a",
-  "generated": "2026-05-21T14:07:19.283Z",
+  "commit": "4197f1d27bb9d61846ee09ed19dd492dc612440a",
+  "generated": "2026-05-21T14:07:31.693Z",
   "metadata": [
     {
       "__outstatic": {
@@ -18,22 +18,6 @@
       "status": "published",
       "title": "Landing",
       "welcomeMessage": "Welcome to Happy Homes Community, test change"
-    },
-    {
-      "__outstatic": {
-        "commit": "95af642eacea981bc65e8ce81681bcffa4f2319b",
-        "hash": "2406773570",
-        "path": "outstatic/content/_singletons/landing-page.md"
-      },
-      "author": {
-        "name": "Adnan Gondal",
-        "picture": "https://avatars.githubusercontent.com/u/43793942?v=4"
-      },
-      "collection": "_singletons",
-      "publishedAt": "2026-05-21T14:07:44.643Z",
-      "slug": "landing-page",
-      "status": "draft",
-      "title": "Landing Page"
     },
     {
       "__outstatic": {
