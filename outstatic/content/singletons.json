@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "title": "Landing Page",
+    "slug": "landing-page",
+    "directory": "outstatic/content/_singletons",
+    "path": "outstatic/content/_singletons/landing-page.md",
+    "publishedAt": "2026-05-21T14:07:44.643Z",
+    "status": "draft"
+  }
+]
