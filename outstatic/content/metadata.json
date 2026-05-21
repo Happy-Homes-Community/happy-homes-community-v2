@@ -1,6 +1,6 @@
 {
-  "commit": "95af642eacea981bc65e8ce81681bcffa4f2319b",
-  "generated": "2026-05-21T14:02:10.469Z",
+  "commit": "b6687844166415ddccfbc399bbfc10b26d2e798a",
+  "generated": "2026-05-21T14:07:19.283Z",
   "metadata": [
     {
       "__outstatic": {
@@ -34,6 +34,22 @@
       "slug": "landing-page",
       "status": "draft",
       "title": "Landing Page"
+    },
+    {
+      "__outstatic": {
+        "commit": "b6687844166415ddccfbc399bbfc10b26d2e798a",
+        "hash": "3391883501",
+        "path": "outstatic/content/_singletons/our-mission.md"
+      },
+      "author": {
+        "name": "Adnan Gondal",
+        "picture": "https://avatars.githubusercontent.com/u/43793942?v=4"
+      },
+      "collection": "_singletons",
+      "publishedAt": "2026-05-21T14:12:15.896Z",
+      "slug": "our-mission",
+      "status": "draft",
+      "title": "Our Mission"
     }
   ]
 }
