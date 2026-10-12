@@ -21,12 +21,12 @@ export default function NotFound() {
                     404
                 </h1>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                    Looks like you're lost!
+                    Looks like you&apos;re lost!
                 </h2>
 
                 {/* Friendly Error Message */}
                 <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-md mx-auto">
-                    The page you are looking for doesn't exist, has been moved, or is temporarily unavailable. Let's get you back home.
+                    The page you are looking for doesn&apos;t exist, has been moved, or is temporarily unavailable. Let&apos;s get you back home.
                 </p>
 
                 {/* Back to Home Button */}
